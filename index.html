@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bug Hunters: Teen QA Challenge - Learn software testing and defect detection">
+    <title>Bug Hunters: Teen QA Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero/Intro Section -->
+    <section id="intro" class="section intro-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glitch-text">Welcome to Bug Hunters!</h1>
+                <p class="hero-description">
+                    QA testers are digital detectives — can you spot what's wrong before release?
+                </p>
+                <button class="cta-button" onclick="scrollToSection('bug-hunt')">
+                    Start the Bug Hunt 🔍
+                </button>
+            </div>
+            <div class="neon-lights">
+                <div class="neon-circle neon-blue"></div>
+                <div class="neon-circle neon-green"></div>
+                <div class="neon-circle neon-purple"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bug Hunt Zone -->
+    <section id="bug-hunt" class="section bug-hunt-section">
+        <div class="container">
+            <h2 class="section-title">🐞 Bug Hunt Zone</h2>
+            <p class="section-subtitle">Click on the bugs in the page to mark them!</p>
+            
+            <div class="bug-counter">
+                <span id="bugs-found">0</span> / <span id="total-bugs">7</span> Bugs Found
+            </div>
+
+            <div class="pages-container">
+                <!-- Buggy Page -->
+                <div class="page-panel buggy-page">
+                    <h3 class="page-title">Find the Bugs 🐛</h3>
+                    <div class="mock-page">
+                        <header class="mock-header">
+                            <h4 class="bug-item" data-bug="1">Welcme to Our Site</h4>
+                            <nav>
+                                <a href="#" class="bug-item" data-bug="2" style="color: #333;">Home</a>
+                                <a href="#">About</a>
+                                <a href="#">Contact</a>
+                            </nav>
+                        </header>
+                        
+                        <div class="mock-content">
+                            <div class="mock-card bug-item" data-bug="3" style="margin-left: -20px;">
+                                <h5>Featured Product</h5>
+                                <p>Check out our amazing product that will change your life!</p>
+                                <button>Learn More</button>
+                            </div>
+                            
+                            <div class="mock-image-placeholder bug-item" data-bug="4">
+                                <span style="color: red;">Image Not Found</span>
+                            </div>
+                            
+                            <p class="mock-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                <span class="bug-item" data-bug="5" style="font-size: 8px;">This text is too small to read</span>
+                            </p>
+                            
+                            <a href="broken-link.html" class="bug-item" data-bug="6" style="text-decoration: underline; color: purple;">
+                                Click here to learn more
+                            </a>
+                            
+                            <div class="mock-footer bug-item" data-bug="7" style="background: #f0f0f0; color: #f5f5f5;">
+                                © 2024 Company Name. All rights reserved.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Score Form (appears after finding all bugs) -->
+            <div id="submit-score-form" class="submit-score-form">
+                <h3 class="form-title">🎉 All Bugs Found!</h3>
+                <p class="form-subtitle">Enter your name to save your score:</p>
+                <div class="leaderboard-input">
+                    <input type="text" id="player-name-bug-hunt" placeholder="Enter your name" maxlength="20">
+                    <button class="submit-button" onclick="submitToLeaderboard()">Submit Score 🏆</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard" class="section leaderboard-section">
+        <div class="container">
+            <h2 class="section-title">📊 Leaderboard</h2>
+            <p class="motivational-text">"Attention to detail is your superpower."</p>
+
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-number" id="total-bugs-found-stat">0</div>
+                    <div class="stat-label">Total Bugs Found</div>
+                </div>
+            </div>
+
+            <div class="leaderboard-list">
+                <h3>Top Bug Hunters</h3>
+                <ol id="leaderboard-entries">
+                    <!-- Leaderboard entries will be dynamically loaded -->
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed by the REALTOR.ca QA Team — inspiring the next generation of software testers.</p>
+            <p class="footer-year">© 2025 Bug Hunters Challenge</p>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <h2>🎉 QA Level 1 Complete!</h2>
+            <p>Great eye for detail! You found all the bugs!</p>
+            <p style="margin-top: 20px; color: var(--neon-green);">Now enter your name to save your score!</p>
+            <button class="cta-button" onclick="closeModal()">Enter Name</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="google-sheets.js"></script>
+</body>
+</html>
