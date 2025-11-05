@@ -434,7 +434,6 @@ function setupBrokenLinkDetection() {
                 
                     // Update the bug counter
                     bugsFound++;
-                    document.getElementById('bugs-found').textContent = bugsFound;
                     
                     // Track which bug was found
                     if (!bugsFoundDetails.includes('1')) {
