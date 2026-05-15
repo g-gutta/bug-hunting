@@ -40,19 +40,19 @@
                 <!-- Mock Website Header with Navigation (Bug #1: Broken Link) -->
                 <header class="mock-header">
                     <div class="mock-logo">
-                        <h3>🎮 GameStore</h3>
+                        <h3>🎯 Challenge Platform</h3>
                     </div>
                     <nav class="mock-nav">
-                        <a href="nonexistent-page.html" id="reviews-link" class="bug-item" target="_blank" data-bug="1">Reviews</a> <!-- Bug #1: Broken link - Click to mark as bug -->
+                        <a href="nonexistent-page.html" id="reviews-link" class="bug-item" target="_blank" data-bug="1">Resources</a> <!-- Bug #1: Broken link - Click to mark as bug -->
                     </nav>
                 </header>
 
                 <!-- Hero Section with Fixed Image (Bug #5) -->
                 <section class="mock-hero">
                     <div class="hero-content">
-                        <h2>Welcome to GameStore!</h2>
-                        <p>Find the best games at amazing prices</p>
-                        <img src="hero-image.svg" alt="GameStore welcome banner with game controller" class="bug-item hero-image" data-bug="5"> <!-- Bug #5: Missing image - Click to mark as bug -->
+                        <h2>Welcome to the QA Challenge!</h2>
+                        <p>Find all hidden bugs and master software testing</p>
+                        <img src="hero-image.svg" alt="QA Challenge welcome banner with magnifying glass" class="bug-item hero-image" data-bug="5"> <!-- Bug #5: Missing image - Click to mark as bug -->
                     </div>
                 </section>
 
@@ -130,22 +130,22 @@
 
                 <!-- Price Calculator Section (Bug #8) -->
                 <section class="mock-calculator">
-                    <h3>Game Price Calculator</h3>
+                    <h3>Score Calculator</h3>
                     <div class="calculator-content">
-                        <p>Calculate your total with tax:</p>
+                        <p>Calculate your final score:</p>
                         <div class="calc-row">
-                            <label>Game Price: $</label>
+                            <label>Base Score: $</label>
                             <input type="number" id="game-price" value="50" min="0">
                         </div>
                         <div class="calc-row">
-                            <label>Quantity:</label>
+                            <label>Multiplier:</label>
                             <input type="number" id="quantity" value="1" min="1">
                         </div>
                         <div class="calc-row">
                             <button onclick="calculateTotal()" class="calc-btn">Calculate Total</button>
                         </div>
                         <div class="calc-result">
-                            <strong>Total with Tax: $<span id="total-result">0</span></strong> <!-- Bug #8: Wrong calculation -->
+                            <strong>Final Score: $<span id="total-result">0</span></strong> <!-- Bug #8: Wrong calculation -->
                         </div>
                         <div class="bug-radio-group" style="margin-top: 20px; justify-content: center;">
                             <span class="bug-question">Is a bug?</span>
@@ -163,8 +163,8 @@
 
                 <!-- Newsletter Section (Bug #2: Email validation) -->
                 <section class="mock-newsletter">
-                    <h3>Subscribe to Our Newsletter</h3>
-                    <p>Get the latest game updates and deals!</p>
+                    <h3>Join Our Testing Community</h3>
+                    <p>Get QA tips and challenges delivered to your inbox!</p>
                     <div class="newsletter-form">
                         <input type="text" placeholder="Enter your email" id="newsletter-email"> <!-- Bug #2: No email validation -->
                         <button class="newsletter-btn" onclick="handleNewsletterSubscribe()">Subscribe Now</button> <!-- NOT a bug - button works -->
@@ -184,7 +184,7 @@
 
                 <!-- Footer -->
                 <footer class="mock-footer">
-                    <p>&copy; 2025 GameStore. All rights reserved.</p>
+                    <p>&copy; 2025 Bug Hunting Challenge. All rights reserved.</p>
                 </footer>
             </div>
 
