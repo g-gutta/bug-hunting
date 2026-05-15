@@ -1,0 +1,44 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b24bf3;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00f7ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ff88;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="#0a0a0f"/>
+  
+  <!-- Gradient overlay -->
+  <rect width="800" height="400" fill="url(#heroGradient)" opacity="0.3"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="80" r="50" fill="#b24bf3" opacity="0.2"/>
+  <circle cx="700" cy="320" r="60" fill="#00ff88" opacity="0.2"/>
+  <circle cx="400" cy="400" r="70" fill="#00f7ff" opacity="0.15"/>
+  
+  <!-- Game controller icon -->
+  <g transform="translate(400, 180)">
+    <!-- Controller body -->
+    <rect x="-80" y="-40" width="160" height="80" rx="20" fill="none" stroke="#00f7ff" stroke-width="3"/>
+    
+    <!-- Left buttons -->
+    <circle cx="-50" cy="-20" r="8" fill="#ff006e"/>
+    <circle cx="-30" cy="-20" r="8" fill="#00ff88"/>
+    <circle cx="-50" cy="0" r="8" fill="#b24bf3"/>
+    <circle cx="-30" cy="0" r="8" fill="#00f7ff"/>
+    
+    <!-- Right buttons -->
+    <circle cx="50" cy="-20" r="8" fill="#ff006e"/>
+    <circle cx="30" cy="-20" r="8" fill="#00ff88"/>
+    <circle cx="50" cy="0" r="8" fill="#b24bf3"/>
+    <circle cx="30" cy="0" r="8" fill="#00f7ff"/>
+    
+    <!-- Center text -->
+    <text x="0" y="30" font-size="18" font-weight="bold" fill="#00f7ff" text-anchor="middle" font-family="Poppins">GameStore</text>
+  </g>
+  
+  <!-- Bottom text -->
+  <text x="400" y="360" font-size="24" font-weight="bold" fill="#00ff88" text-anchor="middle" font-family="Poppins">Welcome to GameStore!</text>
+</svg>
