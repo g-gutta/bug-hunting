@@ -1,4 +1,4 @@
-# Bug Hunters: Teen QA Challenge 🐞
+# Bug Hunting Challenge 🐞
 
 An interactive bug hunting website where kids learn QA testing by finding real bugs embedded in a mock GameStore website. Find all 7 bugs and master software testing skills!
 
