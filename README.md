@@ -1,17 +1,17 @@
 # Bug Hunting Challenge 🐞
 
-An interactive bug hunting website where kids learn QA testing by finding real bugs embedded in a mock GameStore website. Find all 7 bugs and master software testing skills!
+An interactive bug hunting website where kids learn QA testing by finding real bugs embedded in a mock Challenge Platform website. Find all 7 bugs and master software testing skills!
 
 ## 🎯 About
 
-Bug Hunters is an educational web experience that teaches kids about software testing through hands-on bug discovery. Players hunt for 7 real bugs hidden in an interactive mock website, learning about common software defects, security issues, and best practices in web development.
+Bug Hunters is an educational web experience that teaches kids about software testing through hands-on bug discovery. Players hunt for 7 real bugs hidden in an interactive mock website, learning about common web development vulnerabilities and QA best practices.
 
 ## ✨ Features
 
 ### 🎮 Interactive Bug Hunting Experience
 
 1. **Hero Section** - Cyberpunk-themed welcome with animated gradients
-2. **GameStore Mock Website** - Realistic e-commerce site with 7 embedded bugs
+2. **Challenge Platform Mock Website** - Realistic web interface with 7 embedded bugs
 3. **Real-time Bug Detection** - Bugs tracked immediately when clicked or radio buttons selected
 4. **Radio Button Identification** - Mark bugs using "Is a bug?" Yes/No radio buttons
 5. **Results Display** - Comprehensive bug report with found/not-found status
@@ -24,8 +24,8 @@ Bug Hunters is an educational web experience that teaches kids about software te
 3. **Mismatched Label** (💬) - Label and placeholder don't match
 4. **Password Security** (🔐) - Password shown in plain text
 5. **Phone Validation** (📞) - Accepts letters and any length
-6. **Calculator Error** (�) - Adds instead of multiplies
-7. **Email Validation** (�) - Newsletter field accepts invalid email addresses
+6. **Calculator Error** (💡) - Adds instead of multiplies
+7. **Email Validation** (📧) - Newsletter field accepts invalid email addresses
 
 ### 🎨 Design Highlights
 
@@ -81,18 +81,17 @@ Bug Hunters is an educational web experience that teaches kids about software te
 
 ```
 bug-hunting/
-├── index.html               # Main HTML - GameStore mock website
+├── index.html               # Main HTML - Challenge Platform mock website
 ├── styles.css               # All styling and animations (1700+ lines)
-├── script.js                # Bug detection and tracking logic (570+ lines)
+├── script.js                # Bug detection and tracking logic (500+ lines)
 ├── README.md                # This file
-├── SETUP-INSTRUCTIONS.md    # Setup guide
-└── QUICK-SETUP.md           # Quick reference guide
+└── hero-image.svg           # Hero section image asset
 ```
 
 ## 🎮 How to Play
 
-1. **Explore the Website** - Look around the GameStore mock website
-2. **Click Suspicious Elements** - Click on the broken Reviews link and missing image
+1. **Explore the Website** - Look around the Challenge Platform mock website
+2. **Click Suspicious Elements** - Click on the broken Resources link and missing image
 3. **Use Radio Buttons** - Answer "Is a bug?" questions throughout the form, calculator, and newsletter sections
 4. **Real-time Tracking** - Bugs are tracked immediately when you click or select Yes/No
 5. **Fill the Form** - Complete all form fields (empty fields turn red if not filled)
@@ -102,7 +101,7 @@ bug-hunting/
 ## 🐛 Bug Categories
 
 ### Clickable Bugs (2)
-- **Broken Link** - Reviews navigation link (opens 404 page)
+- **Broken Link** - Resources navigation link (opens 404 page)
 - **Missing Image** - Hero section image with broken path
 
 ### Radio Button Bugs (5)
@@ -110,7 +109,7 @@ bug-hunting/
 - **Mismatched Label** - Registration form label/placeholder inconsistency
 - **Password Security** - Password shown in plain text (type="text")
 - **Phone Validation** - Phone field accepts letters and any length
-- **Calculator Error** - Price calculator adds instead of multiplying
+- **Calculator Error** - Score calculator adds instead of multiplying
 
 ### Detection Methods
 - **Click Detection** - Click buggy elements for immediate tracking
@@ -138,7 +137,7 @@ Kids will learn to:
 **For Clickable Bugs:**
 1. Add element in `index.html` with `class="bug-item" data-bug="9"`
 2. Update `totalBugs = 7` to new number in `script.js`
-3. Add bug details in `displayBugsFound()` and `showAllBugsPopup()` functions
+3. Add bug details in `displayBugsFound()` function
 
 **For Radio Button Bugs:**
 1. Add radio buttons in `index.html`:
@@ -166,7 +165,7 @@ Update CSS variables in `styles.css`:
 
 ### Modifying the Mock Website
 
-The GameStore sections in `index.html` can be customized:
+The Challenge Platform sections in `index.html` can be customized:
 - Navigation links
 - Hero section content
 - Form fields
@@ -181,7 +180,7 @@ The GameStore sections in `index.html` can be customized:
 - Edge
 - Mobile browsers (iOS Safari, Chrome Mobile)
 
-## � Live Demo
+## 🔗 Live Demo
 
 Once deployed, visit: `https://g-gutta.github.io/bug-hunting/`
 
